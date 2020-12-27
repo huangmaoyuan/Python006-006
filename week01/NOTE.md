@@ -1,5 +1,5 @@
 学习笔记       
-1，创建虚拟环境，python -m venv (dir)。激活和离开虚拟环境可以用<dir>/bin/activate 和 deactivate。       
+1，创建虚拟环境，python -m venv (dir)。激活和离开虚拟环境可以用(dir)/bin/activate 和 deactivate。       
 2，pip3 freeze > requirement.txt。将当前虚拟环境中的依赖包重定向到requirement.txt。          
 3，pip3 install -r ./requirement.txt。把requirement.txt里的依赖包安装到新环境。    
 4，python中的高级数据类型有coleections，nametuple，deque，Counter，orderedDict。   
