@@ -1,0 +1,17 @@
+1.设置字符集 edit /etc/my.cnf:    
+[client]   
+default-character-set=utf8mb4   
+[mysql]    
+default-character-set=utf8mb4    
+[mysqld]    
+character-set-client-handshake=FALSE   
+character-set-server=utf8mb4    
+collation-server=utf8mb4_unicode_ci    
+init_connect='SET NAMES utf8mb4'    
+
+2.验证字符集    
+mysql> show variables like '%character%';    
+
+3.添加用户    
+mysql> CREATE USER 'arsh'@'%' IDENTIFIED BY '123456';    
+mysql> GRANT privileges ON *.* TO 'arsh'@'%';     
